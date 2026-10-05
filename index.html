@@ -8,82 +8,58 @@
   </head>
   <body>
     <main class="page">
-      <section class="scene" aria-label="Cena de jogo estilo plataforma 2D">
-        <div class="cloud cloud-1"></div>
-        <div class="cloud cloud-2"></div>
-        <div class="cloud cloud-3"></div>
+      <div class="game-wrap">
+        <div class="scene" id="scene" aria-label="Cena do jogo">
+          <div class="sky"></div>
+          <div class="sun"></div>
+          <div class="cloud cloud-a"></div>
+          <div class="cloud cloud-b"></div>
+          <div class="cloud cloud-c"></div>
 
-        <div class="hills hills-back">
-          <span class="hill hill-a"></span>
-          <span class="hill hill-b"></span>
-        </div>
-
-        <div class="trees">
-          <div class="tree tree-1"><span class="trunk"></span><span class="crown"></span></div>
-          <div class="tree tree-2"><span class="trunk"></span><span class="crown"></span></div>
-          <div class="tree tree-3"><span class="trunk"></span><span class="crown"></span></div>
-          <div class="tree tree-4"><span class="trunk"></span><span class="crown"></span></div>
-        </div>
-
-        <!-- 4 TVs com imagens -->
-        <div class="tv tv-1" aria-label="Televisão de apresentação 1">
-          <div class="screen">
-            <img src="Imagens/2.png" alt="TV 1" class="tv-image">
-          </div>
-          <div class="stand"></div>
-        </div>
-
-        <div class="tv tv-2" aria-label="Televis ao de apresentação 2">
-          <div class="screen">
-            <img src="Imagens/2.png" alt="TV 2" class="tv-image">
-          </div>
-          <div class="stand"></div>
-        </div>
-
-        <div class="tv tv-3" aria-label="Televis ao de apresentação 3">
-          <div class="screen">
-            <img src="Imagens/2.png" alt="TV 3" class="tv-image">
-          </div>
-          <div class="stand"></div>
-        </div>
-
-        <div class="tv tv-4" aria-label="Televis ao de apresentação 4">
-          <div class="screen">
-            <img src="Imagens/2.png" alt="TV 4" class="tv-image">
-          </div>
-          <div class="stand"></div>
-        </div>
-
-        <div class="ground"></div>
-
-        <div class="player" aria-label="Personagem principal">
-          <div class="arm arm-left"></div>
-          <div class="arm arm-right"></div>
-
-          <div class="head">
-            <div class="eyes">
-              <span class="eye left"><i></i></span>
-              <span class="eye right"><i></i></span>
+          <div class="tv tv-1" data-name="TV 1">
+            <div class="tv-frame">
+              <img src="Imagens/tv.jpeg" alt="TV 1" />
             </div>
-            <div class="nose"></div>
-            <div class="smile"></div>
           </div>
 
-          <div class="body">
-            <div class="badge">&lt;/&gt;</div>
+          <div class="tv tv-2" data-name="TV 2">
+            <div class="tv-frame">
+              <img src="Imagens/tv.jpeg" alt="TV 2" />
+            </div>
           </div>
 
-          <div class="leg leg-left"></div>
-          <div class="leg leg-right"></div>
+          <div class="tv tv-3" data-name="TV 3">
+            <div class="tv-frame">
+              <img src="Imagens/tv.jpeg" alt="TV 3" />
+            </div>
+          </div>
+
+          <div class="tv tv-4" data-name="TV 4">
+            <div class="tv-frame">
+              <img src="Imagens/tv.jpeg" alt="TV 4" />
+            </div>
+          </div>
+
+          <div class="ground"></div>
+
+          <div class="player" id="player" aria-label="Personagem principal">
+            <img src="Imagens/personagem.jpeg" alt="Personagem" />
+          </div>
+
+          <div class="message" id="message" hidden></div>
         </div>
 
-        <!-- Imagem do cenário de fundo -->
-        <img src="Imagens/3.png" alt="Fundo do cenário" class="background-scenery">
-      </section>
-
-      <!-- Instruções de controle -->
-      <div class="controls-info">
-        <p>⬅️ ➡️ Setas para andar | Espaço para pular | 🖱️ Clique para interagir</p>
+        <div class="controls-bar">
+          <div class="key">←</div>
+          <div class="key">→</div>
+          <span>Setas para andar</span>
+          <div class="divider"></div>
+          <div class="key">Espaço</div>
+          <span>Pular</span>
+          <div class="divider"></div>
+          <div class="key">🖱</div>
+          <span>Clique para interagir</span>
+        </div>
       </div>
     </main>
 
